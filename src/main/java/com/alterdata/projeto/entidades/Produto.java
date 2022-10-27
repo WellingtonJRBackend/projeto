@@ -1,12 +1,14 @@
 package com.alterdata.projeto.entidades;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.Data;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.UUID;
 
+@Data
+@Entity
+@Table(name = "TB_PRODUTO")
 public class Produto implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
